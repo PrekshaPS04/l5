@@ -14,12 +14,12 @@ pipeline {
         }
         stage('run app') {
             steps {
-                bat 'npm app.js'
+                bat 'node app.js'
             }
         }
         stage('run test') {
             steps {
-                bat 'npm test.js'
+                bat 'node test.js'
             }
         }
     }
